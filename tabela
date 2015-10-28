@@ -1,0 +1,11 @@
+\begin{table}[htbp]
+\begin{center}
+\begin{footnotesize}
+\begin{tabular}{|c p{9cm} c|}
+\hline
+\multicolumn{3}{|c|}{\cellcolor[gray]{0.9} \textbf{Tabela }}\\
+\hline \hline
+\end{tabular}
+\end{footnotesize}
+\end{center}
+\end{table}
