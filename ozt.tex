@@ -10,16 +10,20 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{wrapfig}
+\newcommand\blankpage{\newpage \null \thispagestyle{empty} \addtocounter{page}{-1}}
 %\usepackage[margin=4cm]{geometry}
 \author{lek. Maciej Piwoda}
 \title{Ostre Zapalenie Trzustki}
 \begin{document}
 \date{}
 \maketitle
+\blankpage
 \tableofcontents
-\addcontentsline{toc}{chapter}{Wstęp}
+\thispagestyle{empty}
+\addtocounter{page}{-1}
+\blankpage
 \chapter*{Wstęp}
-
+\addcontentsline{toc}{chapter}{Wstęp}
 {\sl,,Acute pancreatitis is the most terrible of all the calamities
 that occur in connection with the abdominal viscera.''
 \newline
@@ -46,6 +50,17 @@ pacjentów rozwija się jednak ciężka postać choroby, wymagająca pobytu
 w oddziale intensywnej terapii. Śmiertelność w tych przypadkach jest
 wysoka i wynosi mniej więcej 30\%. Ogólna śmiertelność wśród
 wszystkich chorych hospitalizowanych wynosi około 10\%.
+
+Ostre zapalenie trzustki jako odrębna jednostka chorobowa zostało
+opisane po raz pierwszy przez szwajcarskiego lekarza
+Teofila Bonetusa w 1664 roku. Opie i Elliott w 1901 roku stworzyli teorię
+,,wspólnego kanału'', według której głównym mechanizmem ostrego
+zapalenia trzustki miało być mieszanie się soku trzustkowego z żółcią
+w drogach żółciowych, a następnie jego zarzucanie do przewodu
+trzustkowego. Zgodnie z teorią ,,toksemii enzymatycznej'' opracowanej
+przez Bernarda w 1966 roku enzymy trzustkowe oraz częściowo produkty ich działania,
+obecne w wysięku otrzewnowym są wchłaniane do krążenia i tą drogą
+docierając do odległych narządów mogą je uszkadzać.
 \end{indent}
 
 \chapter{Budowa i topografia trzustki}
@@ -308,8 +323,8 @@ pobudza wydzielanie żołądkowe i opóźnia opróżnianie żołądka.
 Ostre zapalenie trzustki jest to ostry stan zapalny będący wynikiem
 aktywacji trzustkowych enzymów trawiennych w miąższu gruczołu,
 sąsiadujących tkankach i niekiedy również w odległych narządach.
-Zmianom lokalnym może towarzyszyć uogólniony odczyn zapalny (SIRS) i
-niewydolność wielonarządowa. 
+Zmianom lokalnym może towarzyszyć uogólniony odczyn zapalny (SIRS\footnote{definicja}) i
+niewydolność wielonarządowa (MOF\footnote{kolejna definicja}). 
 
 Sama choroba jak i jej powikłania mogą przebiegać w bardzo różnorodny
 sposób, dlatego niezwykle trudne jest ustalenie jednolitej
@@ -641,11 +656,13 @@ niewielka.
 \end{center}
 \end{table}
 
-Skala POP (\textsl{Pancreatis Outcome Prediction Score}), przedstawiona
-w tabeli nr 5, jest dosyć przydatnym, w szczególności w połączeniu z
-oceną tomograficzną narzędziem rokowniczym. Oceniane jest 6
-parametrów, oznaczanych w pierwszych 24 godzinach od początku
+Skala POP (\textsl{Pancreatitis Outcome Prediction Score}) jest
+przydatnym, w szczególności w połączeniu z oceną tomograficzną
+narzędziem rokowniczym. Oceniane jest 6
+parametrów (tj. wiek, MAP, PaO$_2$/FiO$_2$, pH krwi, poziom mocznika i
+wapńa w osoczu), oznaczanych w pierwszych 24 godzinach od początku
 choroby. W zależności od ilości punktów można określić ryzyko zgonu.
+
 Obecnie najprzydatniejszą skalą stosowaną w ocenie ciężkości przebiegu
 ozt jest skala Marshalla (tabela nr 6), opierająca się na założeniu,
 że najpewniejszym wskaźnikiem ciężkości ostrego zapalenia trzustki
@@ -690,14 +707,20 @@ krążenia (skurczowe ciśnienie tętnicze, mmHg)$^\star$$^\star$
 \end{center}
 \end{table}
 
-ahjd djhak dkahd huw hw iuadkj i dah dihd hihwa dnajds ndisn
-dinwdinwai nndiwand ajindianwd inaidnaindsijnainw njwind nisa daidnkdn 
-hahsd k h aih idhihd ia hjhid ahjhdia dkjad ja d id ajdoija dksm
-msomdoasmdomsadomaiwo m dmwomdoa dowm doodmoamd oamwdomaw do o
-domwdoma mdo domaodmoaw mdo odwaomdo mwaod od oawmdowma do al mdoawm
-dd mwaomdoawmd omd owdomw dom aod mwaodm owamddwaom  odmowamd ow
-domwdomw dmawodwmdowamd udnwadom wd  dwmdo wadomw do  domwad omwdo wdo
-wamdowam do wdwmd omwa domwodm waodow doa
+Oczywiście stosowane są również bardziej uniwersalne skale oceny
+ryzyka i ciężkości stanu pacjenta, w szczególności skala APACHE II
+(wynik powyżej 8 punktów oznacza ciężkie zapalenie trzustki).
+
+Wszystkie wymienione wyżej narzędzia są używane celem identyfikacji
+pacjentów z ciężkim OZT, którzy powinni być od początku bardzo
+intensywnie leczeni i monitorowani. Gdy niewydolność narządowa
+występuje w przeciągu pierwszych 24 godzin i nie jest wiadome, czy
+będzie ona przejściowa, czy przetrwała, należy pacjenta traktować jak
+chorego na ciężką postać zapalenia trzustki. Zalecane jest powtórzenie
+oceny ciężkości OZT po 24 i 48 godzinach oraz 7 dniach od przyjęcia do
+szpitala.
+
+\chapter{Leczenie}
 
 \begin{thebibliography}{99}
 \bibitem{7} Numer 7 z Parillo
