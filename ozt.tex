@@ -5,12 +5,13 @@
 %\usepackage{tikz}
 \usepackage[table]{xcolor}
 \usepackage{paralist}
+%\usepackage{wrapfig}
 %\newcommand*\circled[1]{\textcircled{\footnotesize#1}\normalsize}
 \usepackage[T1]{fontenc}
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{wrapfig}
+\usepackage{titlesec}
 \newcommand\cyt[1]{$^{\tiny{\cite{#1}}}$}
 \newcommand\blankpage{\newpage \null \thispagestyle{empty} \addtocounter{page}{-1}}
 %\usepackage[margin=4cm]{geometry}
@@ -20,6 +21,7 @@
 \date{}
 \maketitle
 \blankpage
+\titleformat{\chapter}[block]{\LARGE\rmfamily}{\thechapter}{1em}{\titlerule\\[.5ex]\bfseries}
 \tableofcontents
 \thispagestyle{empty}
 \addtocounter{page}{-1}
@@ -162,8 +164,10 @@ hormony trzustkowe dociera do tkanki
 zewnątrzwydzielniczej.\cite{szczeklik}\cite{traczyk}
 
 \chapter{Fizjologia trzustki}
+
 Trzustka jest narządem pełniącym w organizmie dwie zasadnicze
 funkcje. Są to:
+
 \begin{itemize}
 \setlength{\itemsep}{0cm}
 \setlength{\parskip}{0cm}
@@ -173,7 +177,12 @@ funkcje. Są to:
   Langerhansa
 \end{itemize}
 
-[tu schemat trzustka i co wydziela]
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.35]{pan-fun1}
+\caption{Funkcje trzustki}
+\end{figure}
+
 
 \section{Czynność zewnątrzwydzielnicza}
 \subsection{Sok trzustkowy}
@@ -204,7 +213,11 @@ aminopeptydazy) oraz dipeptydazy jelitowe. Składnikiem soku
 trzustkowego jest także inhibitor trypsyny, zwany SPINK1
 (\textsl{serine protease inhibitor Kazal type I}).
 
-[schemat z aktywacją proteaz]
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.4]{pan-enz}
+\caption{Aktywacja enzymów trzustkowych w dwunastnicy}
+\end{figure}
 
 Enzymy lipolityczne to: lipaza, fosfolipaza i esterazy. Lipaza
 wydzielana jest w postaci czynnej i rozkłada ona triacyloglicerole do
@@ -355,7 +368,7 @@ pacjentów z SIRS należy leczyć jakby mieli ciężką postać OZT.
 \begin{footnotesize}
 \begin{tabular}{|p{4cm}|p{9cm}|}
 \hline
-\multicolumn{2}{|c|}{\cellcolor[gray]{0.9} \textbf{Tabela 1. Stopnie ciężkości ostrego zapalenia trzustki}}\\
+\multicolumn{2}{|c|}{\cellcolor[gray]{0.9} \textbf{Tabela 1. Stopnie ciężkości ostrego zapalenia trzustki$^\star$}}\\
 \hline \hline
 stopień łagodny & bez niewydolności narządowej i powikłań\\ \hline
 stopień umiarkowany & przejściowa niewydolność narządowa (<48
@@ -363,7 +376,7 @@ stopień umiarkowany & przejściowa niewydolność narządowa (<48
                            ogólnoustrojowe\\ \hline
 stopień ciężki & przetrwała niewydolność narządowa dotycząca
                        co najmniej jednego układu (>48 godz.)\\ \hline
-\multicolumn{2}{|l|}{\footnotesize{na podstawie: Banks i wsp.\cite{banks}}}\\
+\multicolumn{2}{|l|}{\scriptsize{$^\star$na podstawie: Banks i wsp.\cite{banks}}}\\
 \hline
 \end{tabular}
 \end{footnotesize}
@@ -987,16 +1000,148 @@ wykonać cholecystektomię jeszcze przed wypisaniem ze szpitala. W
 przypadku martwiczej postaci OZT cholecystektomia jest możliwa dopiero
 po resorpcji lub ustabilizowaniu zbiorników płynowych.
 
-\section{Leczenie późnych powikłań OZT}
+\section{Leczenie powikłań OZT}
+
+Postępowanie we wczesnym okresie ostrego zapalenia trzustki polega
+głównie na wcześniej opisanym leczeniu podtrzymującym. Wczesne,
+niebezpieczne dla życia powikłania nie zdarzają się często. Należy do
+nich niedokrwienie jelit (będące najczęściej wynikiem zakrzepicy żył
+krezkowych) i krwotok spowodowany uszkodzeniem większych naczyń. W
+przypadku kiedy nie ma się do czynienia z tymi, jakże szczęśliwie
+rzadkimi, powikłaniami, ostre zapalenie trzustki leczy się stosując
+optymalną intensywną terapię (\textsl{good intensive care}), ścisłe
+monitorowanie i cierpliwość.
+
+\subsection*{Torbiel rzekoma trzustki}
+
+Torbiele rzekome trzustki są zbiornikami płynu otoczonymi torebką
+zbudowaną z włóknistej tkanki łącznej wyścielonej ziarniną. Powstają w
+wyniku otorbienia ostrych okołotrzustkowych zbiorników płynu
+(\textsl{acute peripancreatic fluid collection} - APFC), które
+utrzymują się dłużej niż 4 tygodnie. Typową dla nich lokalizacją jest
+sieć mniejsza\footnote{lesser sac}, pomiędzy trzustką, a tylną ścianą
+żołądka. Najczęstszymi powikłaniami wymagającymi zdrenowania torbieli są
+uporczywe dolegliwości bólowe, objawy wysokiej niedrożności przewodu
+pokarmowego, zakażenie. Innym groźnym powikłaniem jest krwawienie do
+torbieli.
+
+Postępowanie polega na opróżnieniu torbieli do światła żołądka przez
+jego tylną ścianę. W tym celu obok klasycznej laparotomii stosowane są
+techniki takie jak gastrostomia endoskopowa czy
+laparoskopia. Wytworzona w ten sposób wewnętrzna przetoka nie ma
+znaczenia klinicznego. Zapobiega ona powstaniu przetoki trzustkowo-skórnej.
+
+\subsection*{Zakażona martwica i ropień trzustki}
+
+Jednym z kroków milowych w leczeniu ostrego zapalenia trzustki było
+odkrycie, że odroczenie interwencji chirurgicznej o co najmniej 2
+tygodnie w zakażonym OZT znacznie zwiększa przeżywalność
+pacjentów. Proces demarkacji martwicy trzustki wynosi 3 do 4
+tygodni. Operacja trzustki z wyraźną granicą pomiędzy żywymi a
+martwymi tkankami jest bezpieczniejsza i zmniejsza ryzyko konieczności
+kolejnych zabiegów. Taktyka wstrzymywania się od interwencji
+chirurgicznej u pacjenta z objawami ciężkiej sepsy i niewydolnością
+narządową jest, jak to zostało udowodnione\cyt{116} dobrze tolerowana
+i bezpieczniejsza niż leczenie operacyjne.
+
+Nie operuje się jałowej martwicy, którą leczy się
+zachowawczo. Natomiast zakażona martwica wymaga leczenia
+chirurgicznego. Problemem może być rozpoznanie infekcji. Objawy
+uogólnionej reakcji zapalnej (SIRS) mogą maskować zakażenie. Pośrednią
+wskazówką może być wzrost poziomu prokalcytoniny. Cienkoigłowa
+biopsja aspiracyjna martwiczych tkanek pod kontrolą TK pozwala na
+postawienie ostatecznego rozpoznania. Nie jest ona jednak bezwzględnie
+konieczna do decyzji o konieczności zabiegu.
+
+Wcześniej w przebiegu choroby, nim dojdzie do demarkacji zmian
+martwiczych jako przejściową kurację można zastosować przezskórny
+drenaż zbiorników płynowych. 
+
+Chirurgiczne postępowanie w operacji zakażonej martwicy polega na
+usunięciu martwych tkanek w przestrzeni zaotrzewnowej i drenażu tej
+okolicy. Coraz częściej w tym celu stosuje się techniki laparoskopowe.
+Ciągłe płukanie jamy otrzewnowej choć zalecane przez niektórych autorów nie
+jest już tak popularne jak kiedyś i brak też dowodów na korzyści płynące z
+takiego postępowania.
+
+\subsection*{Powikłania naczyniowe martwiczego OZT}
+
+Do powikłań naczyniowych ostrego zapalenia trzustki należą zarówno
+krwotok jak i zakrzepica. Najczęściej dochodzi do zakrzepicy w
+naczyniach (zarówno żylnych jak i tętniczych) położonych w sąsiedztwie
+trzustki: śledzionowych, krezkowych i wrotnych, rzadziej w żyle czczej
+dolnej, żyłach nerkowych. 
+
+Do badań pomocniczych służących wykryciu tych powikłań należą:
+angio-TK, rezonans magnetyczny, USG z badaniem doplerowskim oraz
+wybiórcza angiografia trzewna.W leczeniu stosuje się leczenie
+operacyjne, zabiegi endowaskularne, leczenie przeciwzakrzepowe.
+
+W wyniku erozji naczyń trzustki lub okołotrzustkowych może dojść do
+krwawienia do światła torbieli rzekomej, jamy otrzewnowej, przestrzeni
+zaotrzewnowej lub do światła przewodu pokarmowego. Próba operacyjnego
+zatrzymania krwawienia w zmienionych zapalnie tkankach przestrzeni
+zaotrzewnowej może być sporym wyzwaniem nawet dla doświadczonego
+chirurga, dlatego jeśli to możliwe preferowana jest embolizacja
+krwawiących naczyń. 
 
 \chapter{Rokowanie}
 
-\chapter{Wnioski końcowe}
+Ostre zapalenie trzustki może przebiegać w sposób trudny do
+przewidzenia. Rokowanie co do wyleczenia i przeżycia jest dobre w
+łagodnym OZT. W umiarkowanym OZT ze względu na występowanie
+niewydolności narządowych, powikłań tak miejscowych jak i
+ogólnoustrojowych lub też zaostrzenia chorób współistniejących
+pacjenci wymagają na ogół dłuższej hospitalizacji. Niemniej jednak
+śmiertelność w umiarkowanej postaci jest znacznie mniejsza niż w
+ciężkim OZT. Śmiertelność w ciężkiej postaci OZT znacznie się zwiększa
+w przypadku zakażenia martwicy trzustki i rozwoju powikłań
+septycznych. Leczenie powinno się odbywać się w wyspecjalizowanych
+ośrodkach będących w stanie zapewnić właściwą diagnostykę samej
+choroby jak i jej powikłań (ośrodki dysponujące TK, NMR), adekwatne
+monitorowanie przebiegu choroby oraz odpowiednią do stanu pacjenta
+terapię. Idealnie, jeśli takie ośrodki dysponują możliwością wykonania
+zabiegów endoskopowych przez 24 godziny na dobę.
+
+Nawroty ostrego zapalenia trzustki są częste w przypadku etiologii
+alkoholowej. W przypadku, gdy powodem OZT jest kamica żółciowa należy
+jak najszybciej wykonać cholecystektomię, by uniknąć nawrotu
+choroby. Palenie tytoniu jest również niezależnym czynnikiem wpływającym na
+częstość nawrotów OZT. W grupie palaczy ryzyko zachorowania na OZT
+jest dwukrotnie wyższe niż u niepalących. Większe znaczenie ma tu czas trwania
+nałogu, niż jego intensywność. Dopiero po 20 latach od zaprzestania
+palenia tytoniu ryzyko zachorowania osiąga poziom taki jak u
+niepalących.
+
+Leczenie ostrego martwiczego zapalenia trzustki może być sporym
+wyzwaniem. Pobyt w oddziale intensywnej terapii, jak i cała
+hospitalizacja zazwyczaj są dość długotrwałe. Pacjenci wymagający
+interwencji chirurgicznych, częstokroć później przechodzą kolejne
+zabiegi, mające na celu np. likwidację przetoki, zamknięcie stomii,
+usunięcie pęcherzyka żółciowego. Jak wskazują jednak liczne
+badania\cyt{141} pacjenci, którzy przeżyją ostrą fazę choroby mają
+szansę na taką samą jakość życia związaną ze zdrowiem jak ich
+rówieśnicy.
+
+Zaburzenia w funkcji zewnątrz- jak i wewnątrzwydzielniczej są często
+po przebytym OZT. Szacuje się, że u około 1/3 pacjentów po epizodzie
+ciężkiego OZT rozwija się cukrzyca.
+
+Progresja do przewlekłego zapalenia trzustki nie jest częstym
+zjawiskiem. Na ogół jest związana z częstymi nawrotami choroby, a także z
+wyżej wspomnianymi nałogami, czyli nadużywaniem alkoholu i paleniem
+tytoniu.
+
 
 \begin{thebibliography}{99}
 \bibitem{7} Numer 7 z Parillo
+\bibitem{anatomia} anatomia
+\bibitem{ryba} ryba
+\bibitem{Atlas patofizjologii} atlas
+\bibitem{kliniczny handbook}
 \bibitem{szczeklik} Szczeklik \& co
 \bibitem{traczyk} Traczyk
+\bibitem{Parillo} Parillo
 \bibitem{bochenek} Bochenek w/g wikipedii
 \bibitem{banks} Banks P.A., Bollen T.L., Dervenis C., et al.; Acute
   Pancreatitis Classification Working Group. Classification of acute
@@ -1010,6 +1155,8 @@ po resorpcji lub ustabilizowaniu zbiorników płynowych.
 \bibitem{26} Parillo 26
 \bibitem{69} Parillo 69
 \bibitem{73} Parillo 73
+\bibitem{116} Parillo 116
+\bibitem{141} Parillo 141
 \end{thebibliography}
 \addcontentsline{toc}{chapter}{Bibliografia}
 \end{document}
