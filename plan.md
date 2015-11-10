@@ -16,3 +16,12 @@ Ostre Zapalenie Trzustki
 8. Leczenie:
 - wstępne
 - późne
+
+_todo_
+1. tytuł
+2. spróbować inaczej styl rozdziałów
+3. uzupełnić footnoty                       *
+4. przeczytać                               *
+------------
+5. bibliografia
+6. jeszcze raz przeczytać
