@@ -11,7 +11,7 @@
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{titlesec}
+\usepackage{titlesec}%, blindtext, color}
 \newcommand\cyt[1]{$^{\tiny{\cite{#1}}}$}
 \newcommand\blankpage{\newpage \null \thispagestyle{empty} \addtocounter{page}{-1}}
 %\usepackage[margin=4cm]{geometry}
@@ -19,9 +19,31 @@
 \title{Ostre Zapalenie Trzustki}
 \begin{document}
 \date{}
-\maketitle
+%\maketitle
+\begin{titlepage}
+  \centering \vspace*{\baselineskip}
+  \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+  \rule{\textwidth}{0.4pt}\\[\baselineskip]
+  {\LARGE Ostre Zapalenie Trzustki}\\[0.2\baselineskip]
+  \rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+  \rule{\textwidth}{1.6pt}\\[\baselineskip]
+  \scshape Praca Poglądowa do specjalizacji z anestezjologii
+  i intensywnej terapii\\
+  \vspace*{6\baselineskip}
+  \itshape{Autor}\\
+  {\large{lek. Maciej Piwoda}}\\
+  \vfill
+  \scshape
+  Kierownik specjalizacji: lek. Maciej Gawor\\
+  ordynator Oddziału Anestezjologii i Intensywnej Terapii\\
+  Wojewódzkiego Centrum Medycznego w Opolu\\
+  \vspace*{4\baselineskip}
+  Opole 2015
+\end{titlepage}
 \blankpage
+%\definecolor{gray75}{gray}{0.75}
 \titleformat{\chapter}[block]{\LARGE\rmfamily}{\thechapter}{1em}{\titlerule\\[.5ex]\bfseries}
+%\titleformat{\chapter}[hang]{\Huge\rmfamily}{\thechapter\textcolor{gray75}{|}}{0pt}{\Huge\rmfamily}
 \tableofcontents
 \thispagestyle{empty}
 \addtocounter{page}{-1}
@@ -204,16 +226,16 @@ i następnie wchłonięte w jelitach\cyt{szczeklik}.
 
 Enzymy trzustkowe to w ok. 80\% enzymy proteolityczne: trypsyna,
 chymotrypsyna, karboksypeptydazy A i B oraz elastaza. Enzymy te
-wydzielane są w postaci nieaktywnych proenzymów: trypsynogenu, chymotrypsynogenu,
-prokarbopeptydaz i proelastazy. Pod wpływem enterokinazy, wydzielanej
-przez komórki nabłonka dwunastnicy proenzymy przekształcane są do
-aktywnych postaci. Trypsyna również aktywuje inne zymogeny, włącznie z
-trypsynogenem. Trypsyna i chymotrypsyna są endopeptydazami i
-trawią białko do oligopeptydów, które są następnie rozkładane do
-pojedynczych aminokwasów przez egzopeptydazy (karboksypeptydazy i
-aminopeptydazy) oraz dipeptydazy jelitowe. Składnikiem soku
-trzustkowego jest także inhibitor trypsyny, zwany SPINK1
-(\textsl{serine protease inhibitor Kazal type I}).
+wydzielane są w postaci nieaktywnych proenzymów: trypsynogenu,
+chymotrypsynogenu, prokarbopeptydaz i proelastazy. Pod wpływem
+enterokinazy, wydzielanej przez komórki nabłonka dwunastnicy proenzymy
+przekształcane są do aktywnych postaci. Trypsyna również aktywuje inne
+zymogeny, włącznie z trypsynogenem. Trypsyna i chymotrypsyna są
+endopeptydazami i trawią białko do oligopeptydów, które są następnie
+rozkładane do pojedynczych aminokwasów przez egzopeptydazy
+(karboksypeptydazy i aminopeptydazy) oraz dipeptydazy
+jelitowe. Składnikiem soku trzustkowego jest także inhibitor trypsyny,
+zwany SPINK1 (\textsl{serine protease inhibitor Kazal type I}).
 
 \begin{figure}[!h]
 \centering
@@ -373,17 +395,17 @@ pacjentów z SIRS należy leczyć jakby mieli ciężką postać OZT.
 \begin{center}
 \begin{footnotesize}
 \begin{tabular}{|p{4cm}|p{9cm}|}
-\hline
-\multicolumn{2}{|c|}{\cellcolor[gray]{0.9} \textbf{Tabela 1. Stopnie ciężkości ostrego zapalenia trzustki$^\star$}}\\
-\hline \hline
-stopień łagodny & bez niewydolności narządowej i powikłań\\ \hline
-stopień umiarkowany & przejściowa niewydolność narządowa (<48
-                           godz.) i/lub powikłania miejscowe bądź
-                           ogólnoustrojowe\\ \hline
-stopień ciężki & przetrwała niewydolność narządowa dotycząca
-                       co najmniej jednego układu (>48 godz.)\\ \hline
-\multicolumn{2}{|l|}{\scriptsize{$^\star$na podstawie: Banks i wsp.\cyt{banks}}}\\
-\hline
+  \hline
+  \multicolumn{2}{|c|}{\cellcolor[gray]{0.9} \textbf{Tabela 1. Stopnie ciężkości ostrego zapalenia trzustki$^\star$}}\\
+  \hline \hline
+  stopień łagodny & bez niewydolności narządowej i powikłań\\ \hline
+  stopień umiarkowany & przejściowa niewydolność narządowa (<48
+                        godz.) i/lub powikłania miejscowe bądź
+                        ogólnoustrojowe\\ \hline
+  stopień ciężki & przetrwała niewydolność narządowa dotycząca
+                   co najmniej jednego układu (>48 godz.)\\ \hline
+  \multicolumn{2}{|l|}{\scriptsize{$^\star$na podstawie: Banks i wsp.\cyt{banks}}}\\
+  \hline
 \end{tabular}
 \end{footnotesize}
 \end{center}
@@ -1141,29 +1163,64 @@ paleniem tytoniu.
 
 
 \begin{thebibliography}{99}
-\bibitem{7} Numer 7 z Parillo
-\bibitem{anatomia} anatomia
-\bibitem{ryba} ryba
-\bibitem{Atlas patofizjologii} atlas
-\bibitem{kliniczny handbook}
-\bibitem{szczeklik} Szczeklik \& co
-\bibitem{traczyk} Traczyk
-\bibitem{Parillo} Parillo
-\bibitem{bochenek} Bochenek w/g wikipedii
+\bibitem{7} Gallerani M., Boari B., Salmi R., et al.; Seasonal
+  variation in the onset of acute pancreatitis. World Journal of
+  Gastroenterology 2004; 10:3328-3331
+\bibitem{anatomia} Janina Pituchowa i wsp.; Anatomia
+  Człowieka. Warszawa 2006. Wydawnictwo Lekarskie PZWL, Wydanie VIII;
+  str. 332-336
+\bibitem{ryba} Zbigniew Rybicki i wsp.; Intensywna Terapia Dorosłych
+  tom II, wydanie III. Lublin 2015. Wydawnictwo Makmed; str. 231-237
+\bibitem{Atlas patofizjologii} Stefan Silbernagl, Florian Lang; Atlas
+  patofizjologii. Wrocław 2011. MedPharm Polska; str. 172-173
+\bibitem{szczeklik} Piotr Gajewski i wsp.; Interna
+  Szczeklika. Podręcznik chorób wewnętrznych. Kraków 2013. Medycyna
+  Praktyczna; str.994-1003
+\bibitem{traczyk} Wiesław Z. Traczyk, Andrzej Trzebski i wsp.;
+  Fizjologia Człowieka z elementami fizjologii stoswanej i
+  klinicznej. Wydanie III. Warszawa 2009. Wydawnictwo Lekarskie PZWL;
+  str.762-774
+\bibitem{Parillo} Joseph E. Parillo, R. Phillip Dellinger; Critival
+  Care Medicine. Principles of Diagnosis and Management in the
+  Adult. Third Edition, 2008; 1627-1635
+\bibitem{bochenek} Adam Bochenek, Michał Reicher: Anatomia człowieka
+  tom II. Warszawa: Wydawnictwo Lekarskie PZWL, 2010. ISBN
+  978-83-200-4152-1., str. 307-318
 \bibitem{banks} Banks P.A., Bollen T.L., Dervenis C., et al.; Acute
   Pancreatitis Classification Working Group. Classification of acute
   pancreatitis – 2012: revision of the Atlanta classification and
   definitions by international consensus. Gut, 2012; 62: 102–111
-\bibitem{38} Parillo 38
-\bibitem{39} Parillo 39
-\bibitem{40} Parillo 40
-\bibitem{21} Parillo 21
-\bibitem{27} Parillo 27
-\bibitem{26} Parillo 26
-\bibitem{69} Parillo 69
-\bibitem{73} Parillo 73
-\bibitem{116} Parillo 116
-\bibitem{141} Parillo 141
+\bibitem{38} Tukiainen E., Kylanpaa ML, Kemppainen E., et al:
+  Pancreatic secretory trypsin inhibitor (SPINK1) gene mutations in
+  patients with acute pancreatitis. Pancreas 2005; 30:239-242
+\bibitem{39} Bishop MD, Freedman SD, Zielenski J., et al.; The cystic
+  fibrosis transmembrane conductance regulator gene and ion channel
+  function in patients with idiopathic pancreatitis.; Human Genetic
+  2005; 118:372-381
+\bibitem{40} Balog A., Gyulai Z., Boros LG, et al.; Polymorphism of
+  the TNF-alpha, HSP70-2, and CD14 genes increase susceptibility to
+  severe acute pancreatitis. Pancreas 2005;30:46-50
+\bibitem{21} Halangk W., Lerch MM, Brandt-Nedelev B., et al.; Role of
+  cathepsin B in intracellular trypsinogen activation and the onset of
+  acute pancreatitis. Journal of Clinical Investigation 2000; 106:773-781
+\bibitem{27} Laveda R., Martinez J., Munoz C., et al.; Different
+  profile of cytokine synthesis according to the severity of acute
+  pancreatitis. World Journal of Gastroenterology 2005; 11:5309-5313
+\bibitem{26} Mareninova OA, Sung KF, Hong P., et al.; Cell Death in
+  pancreatitis: Caspases protect from necrotizig pancreatitis. Journal
+  of Biology and Chemistry 2006; 281:3370-3381
+\bibitem{69} Marshall JC; Lipopolisaccharide: An endotoxin or an
+  exogenous hormone? Clinical Infectious Diseases 2005; 41:5470-5480
+\bibitem{73} Vilatoro E., Ebassi C., Larvin M.; Antibiotic Therapy for
+  prophylaxis against infection of pancreatic necrosis in acute
+  pancreatitis. Cochrane Database Syst. Rev. 2006; 4:CD002941
+\bibitem{116} Bradley EL 3rd, Allen K.; A prospective longitudinal
+  study of observation versus surgical intervention in the management
+  of necrotizing pancreatitis. American Journal of Surgery 1991; 161:19-25
+\bibitem{141} Bosscha K., Reijnders K., Jacobs MH, et al.; Quality of
+  life after severe bacterial peritonitis and infected necrotizing
+  pancreatitis treated with open management of the abdomen and planned
+  re-operations. Critical Care Medicine 2001; 29:1539-1543
 \end{thebibliography}
 \addcontentsline{toc}{chapter}{Bibliografia}
 \end{document}
